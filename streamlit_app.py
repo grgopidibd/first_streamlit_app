@@ -50,4 +50,5 @@ streamlit.text("What fruit would you like to add?")
 # Allow the end user to add a fruit to the list
 add_my_fruit = streamlit.text_input('jackfruit')
 #add_my_fruit = {'banana','cherry','strawberry','pineapple','apple','mango','coconut','plum','avocado','starfruit'}
-streamlit.text("Thanks for adding jackfruit")
+fruit_choice = streamlit.text_input('What fruit would you like information about?', 'jackfruit')
+streamlit.write('The user entered', fruit_choice)
