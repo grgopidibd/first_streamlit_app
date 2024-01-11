@@ -23,10 +23,10 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page
-streamlit.dataframe(fruits_to_show)
+#streamlit.dataframe(fruits_to_show)
 
 # New Section to display fruityvice api response
-streamlit.header('Fruityvice Fruit Advice!')
+#streamlit.header('Fruityvice Fruit Advice!')
 
 #def get_fruityvice_data(this_fruit_choice):
  #   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+this_fruit_choice)
@@ -43,7 +43,7 @@ streamlit.header('Fruityvice Fruit Advice!')
 #except URLError as e:
  #   streamlit.error()
     
-streamlit.header("The fruit load list contains:")
+#streamlit.header("The fruit load list contains:")
 # Snowflake-related functions
 #def get_fruit_load_list():
  #   with my_cnx.cursor() as my_cur:
